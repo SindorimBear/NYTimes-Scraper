@@ -32,12 +32,12 @@ To use the New York Times API in this project, follow these steps:
     ```
 
 3. **Set API Key:**
-    Open the `config.py` file and replace `YOUR_NYT_API_KEY` with the API key obtained from the New York Times Developer Network.
+     Replace the `api_key` with the API key obtained from the New York Times Developer Network.
 
 4. **Run the Project:**
     Execute the Python script to see the [specific functionality or purpose] in action.
     ```bash
-    python your_script.py
+    python nyscraper.py
     ```
 
 ## Python Code Explanation
