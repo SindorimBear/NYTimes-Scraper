@@ -5,14 +5,12 @@ import time
 api_key = ''#Replace with your own API Key
 base_url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json'
 #Set Keywords
-keywords = ['online', 'SNS complain', 'digital', 'e-WOM', 'electronic word of mouth',
-            'complaint management', 'complaint handling', 'complaint recovery',
-            'complaint apology', 'complain recovery', 'complain apology', 'complain']
-# Date range (format: YYYYMMDD)
+keywords = ['online'] #Can add multiple keywords
+# Date range 2022~2023
 begin_date = '20220101'
 end_date = '20231127'
 # Save file name 
-csv_file = 'nyt_data.csv'
+csv_file = 'data.csv'
 #Requsting New York Times api for data
 def make_api_request(keyword):
     query = keyword
@@ -32,7 +30,7 @@ def make_api_request(keyword):
             article_content = article['lead_paragraph'] if 'lead_paragraph' in article else ''
             article_content = article_content.replace('\n', ' ')
 
-            # Make the comparison case-insensitive
+            # Make the comparison case-insensitive to get relative results
             if any(keyword_part.lower() in field.lower() for keyword_part in keyword.split() for field in [url, headline, article_content]):
                 data.append([url, headline, article_content])
 
