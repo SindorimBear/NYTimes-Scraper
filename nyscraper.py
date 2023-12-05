@@ -2,7 +2,7 @@ import requests
 import csv
 import time
 #Manually get Api-Key from the New York Times Developer Portal
-api_key = 'uPe3dHtxZg7i73LYAMybZUJnmGa7KB4k'
+api_key = ''#Replace with your own API Key
 base_url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json'
 #Set Keywords
 keywords = ['online', 'SNS complain', 'digital', 'e-WOM', 'electronic word of mouth',
