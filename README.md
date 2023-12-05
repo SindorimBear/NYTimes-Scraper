@@ -77,6 +77,4 @@ Feel free to explore and modify the code to suit your needs!
 ```bash
 python nyscraper.py
 ```
-## Contributions
 
-Contributions are welcome! If you find a bug, have a feature request, or would like to suggest improvements, please [open an issue](https://github.com/SindorimBear/NYTimes-Scraper) or submit a pull request.
